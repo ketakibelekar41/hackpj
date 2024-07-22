@@ -10,22 +10,19 @@ export const HackingPage = memo(() => {
     const callbackHell = () => {
         setTimeout(() => {
             setMessage(`Hey ${formData.name}!`);
-            //console.log(`Hey ${formData.name}!`);
 
             setTimeout(() => {
                 setMessage(() => "\nFetching username and password");
-                // console.log("Fetching username and password");
-
-                setMessage(() => `\nI'm hacking your account with email ${formData.email}`);
-                // console.log(`I'm hacking your account with email ${formData.email}`);
 
                 setTimeout(() => {
-                    setMessage(() => `\nHacking initiated with password ${formData.pwd}`);
-                    // console.log(`Hacking initiated with password ${formData.pwd}`);
+                    setMessage(() => `\nI'm hacking your account with email ${formData.email}`);
 
                     setTimeout(() => {
-                        setMessage(() => "\nAccount has been Hacked!");
-                        // console.log("Account has been Hacked!");
+                        setMessage(() => `\nHacking initiated with password ${formData.pwd}`);
+
+                        setTimeout(() => {
+                            setMessage(() => "\nAccount has been Hacked!");
+                        }, 5000);
                     }, 5000);
                 }, 5000);
             }, 5000);
