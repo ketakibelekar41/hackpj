@@ -13,16 +13,18 @@ export const HackingPage = memo(() => {
             //console.log(`Hey ${formData.name}!`);
 
             setTimeout(() => {
-                setMessage(() => `\nI'm hacking your account with email ${formData.email}`);
-                // console.log(`I'm hacking your account with email ${formData.email}`);
 
                 setTimeout(() => {
-                    setMessage(() => `\nHacking initiated with password ${formData.pwd}`);
-                    // console.log(`Hacking initiated with password ${formData.pwd}`);
+                    setMessage(() => "\nFetching username and password");
+                    // console.log("Fetching username and password");
+
+                    setMessage(() => `\nI'm hacking your account with email ${formData.email}`);
+                    // console.log(`I'm hacking your account with email ${formData.email}`);
 
                     setTimeout(() => {
-                        setMessage(() => "\nFetching username and password");
-                        // console.log("Fetching username and password");
+                        setMessage(() => `\nHacking initiated with password ${formData.pwd}`);
+                        // console.log(`Hacking initiated with password ${formData.pwd}`);
+
 
                         setTimeout(() => {
                             setMessage(() => "\nAccount has been Hacked!");
