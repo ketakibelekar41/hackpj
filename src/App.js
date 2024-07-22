@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import { LogDetails } from './Components/LogDetails';
+import { myContext } from './Components/LogDetails';
 
+import { HackingPage } from './Components/HackingPage';
+import { useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
+  const [formData, setFormData] = useState(null)
+
+  const handleFromSubmit = (data) => {
+    setFormData(data)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <myContext.Provider value={formData}>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<LogDetails onFormSubmit={handleFromSubmit} />} />
+            <Route path='/display' element={<HackingPage />} />
+          </Routes>
+        </BrowserRouter>
+      </myContext.Provider>
     </div>
   );
 }

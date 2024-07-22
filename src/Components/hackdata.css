@@ -1,0 +1,119 @@
+/* hackdata.css */
+body {
+    background-color: black;
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* .display-data-container {
+    text-align: center;
+    letter-spacing: 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(18),
+        cursor.4s step-end infinite alternate;
+} */
+.display-data-container {
+    text-align: center;
+    color: green;
+    background-color: black;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.message-container {
+    white-space: pre-wrap;
+    text-align: left;
+    margin: 20px auto;
+    width: fit-content;
+    line-height: 1.5;
+    line-break: loose;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+
+    from {
+        width: 10px 0;
+    }
+}
+
+h3,
+p,
+pre {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+pre {
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+#message-container p {
+    margin: 10px 0;
+    /* Add margin between messages */
+    text-align: left;
+}
+
+form {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border: 2px solid #00FF00;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 0 50px rgb(0, 255, 38);
+}
+
+table {
+    width: 100%;
+    color: #00FF00;
+}
+
+th,
+td {
+    padding: 10px;
+    font-size: 20px;
+}
+
+th {
+    text-align: right;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #000;
+    color: #00FF00;
+    border: 2px solid #00FF00;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #000;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
