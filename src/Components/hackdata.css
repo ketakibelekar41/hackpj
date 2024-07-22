@@ -1,6 +1,6 @@
-/* hackdata.css */
 body {
-    background-color: black;
+    background: url('https://th.bing.com/th/id/R.584b257c3af34d13724da3e888e21d15?rik=djnNjeu70lvntw&riu=http%3a%2f%2forig04.deviantart.net%2f321e%2ff%2f2008%2f333%2f8%2f2%2fanimated_wallpaper_by_sgalteran.gif&ehk=piA43ugC9xwE8OGHpqIlUs3cVbz5FGV5wf9Gzft6dsw%3d&risl=1&pid=ImgRaw&r=0') no-repeat center center fixed;
+    background-size: cover;
     color: #00FF00;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
@@ -10,21 +10,15 @@ body {
     margin: 0;
 }
 
-/* .display-data-container {
-    text-align: center;
-    letter-spacing: 10px;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 2s steps(18),
-        cursor.4s step-end infinite alternate;
-} */
 .display-data-container {
     text-align: center;
-    color: green;
-    background-color: black;
+    color: #00FF00;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Add transparency */
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
+    border: 2px solid #00FF00;
+    border-radius: 10px;
 }
 
 .message-container {
@@ -33,7 +27,6 @@ body {
     margin: 20px auto;
     width: fit-content;
     line-height: 1.5;
-    line-break: loose;
 }
 
 @keyframes cursor {
@@ -43,7 +36,6 @@ body {
 }
 
 @keyframes typing {
-
     from {
         width: 10px 0;
     }
@@ -63,12 +55,12 @@ pre {
 
 #message-container p {
     margin: 10px 0;
-    /* Add margin between messages */
     text-align: left;
 }
 
 form {
-    background-color: #1e1e1e;
+    background-color: transparent;
+    /* Add transparency */
     padding: 20px;
     border: 2px solid #00FF00;
     border-radius: 8px;
